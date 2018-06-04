@@ -9,18 +9,15 @@ public class PlyerController : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
-        {
+	
+        public void LButtonDown()
+        { 
             transform.Translate(-3, 0, 0);
         }
 
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        public void RButtonDown()
         {
             transform.Translate(3, 0, 0);
         }
-
-	}
+    
 }
